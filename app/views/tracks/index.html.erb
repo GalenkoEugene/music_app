@@ -4,11 +4,8 @@
   <thead>
     <tr>
       <th>Record name</th>
-      <th>String</th>
       <th>Autor name</th>
-      <th>String</th>
       <th>Album</th>
-      <th>Integer</th>
       <th></th>
       <th></th>
       <th></th>
@@ -19,11 +16,8 @@
     <% @tracks.each do |track| %>
       <tr>
         <td><%= track.record_name %></td>
-        <td><%= track.string %></td>
         <td><%= track.autor_name %></td>
-        <td><%= track.string %></td>
         <td><%= track.album_id %></td>
-        <td><%= track.integer %></td>
         <td><%= link_to 'Show', track %></td>
         <td><%= link_to 'Edit', edit_track_path(track) %></td>
         <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>

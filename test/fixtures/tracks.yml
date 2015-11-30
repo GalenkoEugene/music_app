@@ -2,16 +2,10 @@
 
 one:
   record_name: MyString
-  string: MyString
   autor_name: MyString
-  string: MyString
-  album_id: MyString
-  integer: MyString
+  album_id: 1
 
 two:
   record_name: MyString
-  string: MyString
   autor_name: MyString
-  string: MyString
-  album_id: MyString
-  integer: MyString
+  album_id: 1
