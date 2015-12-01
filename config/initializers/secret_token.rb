@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MusicApp::Application.config.secret_key_base = 'fd8145a0e7bfa3065be1aec69630789d59ef610072af7577f8b49cbed916a729d7fc69d08c73c2d21f4fc96b0e86455443681f99f5d5b59061b801c7b274daa3'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+MusicApp::Application.config.secret_key_base = secure_token
