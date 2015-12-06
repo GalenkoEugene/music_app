@@ -39,4 +39,7 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = "random"
+  
+  #Добавление Capybara DSL во вспомогательный RSpec файл
+  config.include Capybara::DSL  #Для того чтобы правильно запустить тесты мы должны добавить строку в файл
 end
