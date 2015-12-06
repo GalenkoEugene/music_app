@@ -29,3 +29,28 @@
 <br>
 
 <%= link_to 'New Track', new_track_path %>
+
+<% sort_track = Track.where(album_id: 2) %>
+<br><br>
+<h1>Search by 'album_id'</h1>
+<table>
+  <thead>
+    <tr>
+      <th>Record name</th>
+      <th>Autor name</th>
+      <th>Album</th>
+
+    </tr>
+  </thead>
+
+  <tbody>
+    <% sort_track.each do |sort_track| %>
+      <tr>
+        <td><%= sort_track.record_name %></td>
+        <td><%= sort_track.autor_name %></td>
+        <td><%= sort_track.album_id %></td>
+        
+      </tr>
+    <% end %>
+  </tbody>
+</table>
