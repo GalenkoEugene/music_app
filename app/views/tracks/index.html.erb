@@ -4,6 +4,7 @@
 <table>
   <thead>
     <tr>
+      <th>ID</th>
       <th>Record name</th>
       <th>Autor name</th>
       <th>Album</th>
@@ -16,6 +17,7 @@
   <tbody>
     <% @tracks.each do |track| %>
       <tr>
+        <td><%= track.id %></td>
         <td><%= track.record_name %></td>
         <td><%= track.autor_name %></td>
         <td><%= track.album_id %></td>

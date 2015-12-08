@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :album_id %><br>
-    <%= f.number_field :album_id %>
+    <%= f.select :album_id, Album.all.collect {|p| [ p.album_name, p.id ] }, { include_blank: true } %> <!--не в курил до конца но работает-->
   </div>
   <div class="actions">
     <%= f.submit %>
