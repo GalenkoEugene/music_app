@@ -24562,3 +24562,2289 @@ Processing by TracksController#index as HTML
   [1m[35mTrack Load (5.6ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
   Rendered tracks/index.html.erb within layouts/application (19.2ms)
 Completed 200 OK in 34ms (Views: 27.5ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:35:47 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.8ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (14.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 2513ms (Views: 2465.9ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:50 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:51 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:35:51 +0200
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:40:10 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.7ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (46.1ms)
+Completed 200 OK in 94ms (Views: 88.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:40:11 +0200
+
+
+Started GET "/new%202015%20album%20for%20me" for 127.0.0.1 at 2015-12-09 16:40:13 +0200
+
+ActionController::RoutingError (No route matches [GET] "/new%202015%20album%20for%20me"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (191.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (438.8ms)
+
+
+Started GET "/new%202015%20album%20for%20me" for 127.0.0.1 at 2015-12-09 16:40:14 +0200
+
+ActionController::RoutingError (No route matches [GET] "/new%202015%20album%20for%20me"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (137.7ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:40:25 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (1.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered albums/show.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:40:30 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered albums/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 53ms (Views: 43.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:42:02 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.5ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (27.3ms)
+Completed 200 OK in 71ms (Views: 66.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:02 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:03 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:42:04 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered albums/show.html.erb within layouts/application (22.9ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_84562140'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.5ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:42:05 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered albums/show.html.erb within layouts/application (9.4ms)
+Completed 500 Internal Server Error in 24ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_85892030'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.4ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.1ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:42:49 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (0.8ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  Rendered albums/show.html.erb within layouts/application (9.9ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    11: <p id="notice"><%= notice %></p>
+    12: <p>
+    13:   <strong>Record name:</strong>
+    14:   <%= @track.record_name %>
+    15: </p>
+    16: 
+    17: <p>
+  app/views/albums/show.html.erb:14:in `_app_views_albums_show_html_erb___817729609_91179690'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (63.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.2ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (28.0ms)
+Completed 200 OK in 72ms (Views: 66.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:42:54 +0200
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-09 16:42:56 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  Rendered albums/show.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    11: <p id="notice"><%= notice %></p>
+    12: <p>
+    13:   <strong>Record name:</strong>
+    14:   <%= @track.record_name %>
+    15: </p>
+    16: 
+    17: <p>
+  app/views/albums/show.html.erb:14:in `_app_views_albums_show_html_erb___817729609_94039490'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (14.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (197.6ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-09 16:42:56 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mAlbum Load (0.6ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "15"]]
+  Rendered albums/show.html.erb within layouts/application (7.7ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    11: <p id="notice"><%= notice %></p>
+    12: <p>
+    13:   <strong>Record name:</strong>
+    14:   <%= @track.record_name %>
+    15: </p>
+    16: 
+    17: <p>
+  app/views/albums/show.html.erb:14:in `_app_views_albums_show_html_erb___817729609_91179690'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (63.5ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-09 16:46:48 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 15
+  Rendered albums/show.html.erb within layouts/application (9.2ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.3ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-09 16:46:49 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35mTrack Load (1.6ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 15
+  Rendered albums/show.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.8ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 99ms (Views: 93.0ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:52 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:53 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:53 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:46:53 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:46:54 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `list' for #<Track:0x97a7bc4>):
+  app/controllers/albums_controller.rb:15:in `block in show'
+  app/controllers/albums_controller.rb:14:in `show'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (110.9ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:46:55 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (1.5ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+Completed 500 Internal Server Error in 14ms
+
+NoMethodError (undefined method `list' for #<Track:0xa36f920>):
+  app/controllers/albums_controller.rb:15:in `block in show'
+  app/controllers/albums_controller.rb:14:in `show'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (88.3ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:47:15 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (1.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (5.9ms)
+Completed 500 Internal Server Error in 125ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (60.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:47:20 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (20.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (0.9ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 86ms (Views: 61.9ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:47:21 +0200
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:47:22 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (1.2ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (14.6ms)
+Completed 500 Internal Server Error in 172ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_76217710'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.5ms)
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:47:23 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (8.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (72.9ms)
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:48:05 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 98ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (61.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:09 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (3.2ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (65.5ms)
+Completed 200 OK in 106ms (Views: 95.3ms | ActiveRecord: 5.8ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:10 +0200
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:48:11 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (140.8ms)
+Completed 500 Internal Server Error in 162ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_76217710'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (64.7ms)
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:48:12 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (0.6ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    10: 
+    11: <p>
+    12:   <strong>Record name:</strong>
+    13:   <%= @track.record_name %>
+    14: </p>
+    15: 
+    16: <p>
+  app/views/albums/show.html.erb:13:in `_app_views_albums_show_html_erb___817729609_91152010'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.7ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.3ms)
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:48:24 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.7ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:34 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.4ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (86.2ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:38 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:38 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (102.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:50 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (87.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:50 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (132.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.4ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (219.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:51 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (83.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:51 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (81.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:51 +0200
+
+SyntaxError (/home/evgeniy/Documents/rails/music_app/app/controllers/albums_controller.rb:14: formal argument cannot be an instance variable
+    @tracks.each do |@track|
+                           ^):
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:424:in `block in load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:616:in `new_constants_in'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:423:in `load_file'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:324:in `require_or_load'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:463:in `load_missing_constant'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:184:in `const_missing'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.2) lib/active_support/inflector/methods.rb:224:in `constantize'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:535:in `get'
+  activesupport (4.0.2) lib/active_support/dependencies.rb:566:in `constantize'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.2) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.2) lib/action_dispatch/routing/route_set.rb:680:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.2) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.2) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:373:in `_run__642469953__call__callbacks'
+  activesupport (4.0.2) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.2) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (82.4ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:48:57 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (94.6ms)
+Completed 200 OK in 149ms (Views: 122.1ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:48:58 +0200
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:51:01 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (1.4ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (104.4ms)
+Completed 200 OK in 164ms (Views: 133.6ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:02 +0200
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (20.1ms)
+Completed 200 OK in 72ms (Views: 66.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:03 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:51:05 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (2.4ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    13: 
+    14: <p>
+    15:   <strong>Record name:</strong>
+    16:   <%= @track.record_name %>
+    17: </p>
+    18: 
+    19: <p>
+  app/views/albums/show.html.erb:16:in `block in _app_views_albums_show_html_erb___817729609_93604080'
+  app/views/albums/show.html.erb:12:in `_app_views_albums_show_html_erb___817729609_93604080'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (10.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (173.4ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:51:05 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (0.9ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `record_name' for nil:NilClass):
+    13: 
+    14: <p>
+    15:   <strong>Record name:</strong>
+    16:   <%= @track.record_name %>
+    17: </p>
+    18: 
+    19: <p>
+  app/views/albums/show.html.erb:16:in `block in _app_views_albums_show_html_erb___817729609_80034160'
+  app/views/albums/show.html.erb:12:in `_app_views_albums_show_html_erb___817729609_80034160'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (65.1ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:51:28 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:51:29 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:51:31 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (13.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (0.9ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 89ms (Views: 64.0ms | ActiveRecord: 14.7ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-09 16:52:24 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 15
+  Rendered albums/show.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 52ms (Views: 44.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/albums/17" for 127.0.0.1 at 2015-12-09 16:52:26 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "17"]]
+  [1m[35mTrack Load (1.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 17
+  Rendered albums/show.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 161ms (Views: 152.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2015-12-09 16:52:29 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAlbum Load (0.9ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 4
+  Rendered albums/show.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 67ms (Views: 56.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:52:32 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (0.5ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (0.9ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 48ms (Views: 42.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:52:35 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered tracks/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 91ms (Views: 84.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tracks/7/edit" for 127.0.0.1 at 2015-12-09 16:52:39 +0200
+Processing by TracksController#edit as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mTrack Load (21.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35mAlbum Load (0.8ms)[0m  SELECT "albums".* FROM "albums"
+  Rendered tracks/_form.html.erb (239.8ms)
+  Rendered tracks/edit.html.erb within layouts/application (248.6ms)
+Completed 200 OK in 314ms (Views: 283.8ms | ActiveRecord: 21.9ms)
+
+
+Started PATCH "/tracks/7" for 127.0.0.1 at 2015-12-09 16:52:43 +0200
+Processing by TracksController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pW/k8YyRNbqMNAzhgPF14nFETGGtOVhQo+D+qNzuc9o=", "track"=>{"record_name"=>"Я сошла с ума", "autor_name"=>"Тату", "album_id"=>"4"}, "commit"=>"Update Track", "id"=>"7"}
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "7"]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mTrack Exists (0.6ms)[0m  [1mSELECT 1 AS one FROM "tracks" WHERE ("tracks"."record_name" = 'Я сошла с ума' AND "tracks"."id" != 7) LIMIT 1[0m
+  [1m[35mSQL (17.0ms)[0m  UPDATE "tracks" SET "album_id" = ?, "updated_at" = ? WHERE "tracks"."id" = 7  [["album_id", 4], ["updated_at", Wed, 09 Dec 2015 14:52:43 UTC +00:00]]
+  [1m[36m (187.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tracks/7
+Completed 302 Found in 402ms (ActiveRecord: 205.6ms)
+
+
+Started GET "/tracks/7" for 127.0.0.1 at 2015-12-09 16:52:43 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered tracks/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 51ms (Views: 44.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:52:44 +0200
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:52:45 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered tracks/index.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 65ms (Views: 60.1ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/tracks/8" for 127.0.0.1 at 2015-12-09 16:52:49 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "8"]]
+  Rendered tracks/show.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 49ms (Views: 42.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:52:55 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks"
+  [1m[36mTrack Load (0.9ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered tracks/index.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 70ms (Views: 65.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/tracks/7" for 127.0.0.1 at 2015-12-09 16:52:57 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[35mTrack Load (0.5ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1  [["id", "7"]]
+  Rendered tracks/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 158ms (Views: 150.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:53:02 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.3ms)[0m  [1mSELECT "tracks".* FROM "tracks"[0m
+  [1m[35mTrack Load (15.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered tracks/index.html.erb within layouts/application (45.1ms)
+Completed 200 OK in 91ms (Views: 71.1ms | ActiveRecord: 16.5ms)
+
+
+Started GET "/tracks/5" for 127.0.0.1 at 2015-12-09 16:53:04 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  Rendered tracks/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 42ms (Views: 36.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:53:05 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks"
+  [1m[36mTrack Load (0.8ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered tracks/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:53:09 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.2ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 77ms (Views: 72.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2015-12-09 16:53:11 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mTrack Load (1.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 4[0m
+  Rendered albums/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 59ms (Views: 49.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:53:15 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.0ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (24.5ms)
+Completed 200 OK in 69ms (Views: 64.8ms | ActiveRecord: 1.6ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:54:57 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.4ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.7ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (238.4ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:55:04 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (146.9ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:56:52 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (132.1ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:57:59 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (164.1ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:58:17 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (138.7ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:58:19 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (12.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (128.9ms)
+
+
+Started PATCH "/albums" for 127.0.0.1 at 2015-12-09 16:58:24 +0200
+
+ActionController::RoutingError (No route matches [PATCH] "/albums"):
+  actionpack (4.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.2) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.2) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.2) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.2) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.2) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.2) lib/rails/engine.rb:511:in `call'
+  railties (4.0.2) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  /home/evgeniy/.rvm/rubies/ruby-2.0.0-p643/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.8ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.9ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (139.6ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.2ms)[0m  SELECT "tracks".* FROM "tracks"
+  [1m[36mTrack Load (0.8ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered tracks/index.html.erb within layouts/application (32.6ms)
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 16:58:30 +0200
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 16:58:33 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.9ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (1.4ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 61ms (Views: 55.6ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 16:58:35 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (4.4ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mTrack Load (1.0ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered albums/show.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 59ms (Views: 48.3ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 17:04:27 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (0.9ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mTrack Load (0.9ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered albums/show.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 146ms (Views: 75.0ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:28 +0200
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 17:04:31 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.8ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.8ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 63ms (Views: 58.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 17:04:32 +0200
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2015-12-09 17:04:33 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mAlbum Load (0.5ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mTrack Load (1.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 4[0m
+  Rendered albums/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 61ms (Views: 52.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 17:04:35 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.9ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (21.6ms)
+Completed 200 OK in 69ms (Views: 63.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums"
+  [1m[36mTrack Load (0.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", 5]]
+  Rendered albums/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 51ms (Views: 48.2ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-09 17:23:51 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-09 17:23:52 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", "2"]]
+  [1m[36mTrack Load (0.9ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2[0m
+  Rendered albums/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 67ms (Views: 57.9ms | ActiveRecord: 1.6ms)
