@@ -29,8 +29,16 @@
 
 <%= link_to 'New Album', new_album_path %>
 <br>
-<br>
+<br>  
 <h1>Try to create search</h1>
-<% track = Track.all.find(5) %>
-<p>Our track is: </p>
-<h1><%= link_to track.record_name, track.record_name %></h1>
+
+
+<%= form_tag(Album, :method => "get") do %>
+    <div>
+      <%= text_field_tag :search, params[:search], placeholder: "Search by albums" %>
+      <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+           of using a Rails form helper -->
+      <button type="submit"></button>
+    </div>
+  <% end %>
+</div>
