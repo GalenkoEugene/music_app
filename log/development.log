@@ -36411,3 +36411,54 @@ Processing by AlbumsController#show as HTML
   [1m[35mTrack Load (0.8ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
   Rendered albums/show.html.erb within layouts/application (15.7ms)
 Completed 200 OK in 69ms (Views: 58.7ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums"
+  Rendered albums/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 173ms (Views: 164.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+Processing by AlbumsController#index as HTML
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums"[0m
+  Rendered albums/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-10 19:49:41 +0200
