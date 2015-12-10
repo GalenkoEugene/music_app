@@ -8,17 +8,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+	<div id="head"><!--шапка сайта-->
+		<ul>
+			<li><a href="/static_pages/home"> Home</a></li>
+			<li><a href="/static_pages/about"> About</a></li>
+			<li><a href="/static_pages/help"> Help</a></li>
+			<li><a href="/static_pages/contact"> Contact</a></li>
+			<li><a href="/albums">to Album</a></li>
+			<li><a href="/tracks">to Track</a></li>
+		</ul>
+	</div>
 <%= yield %>
-<div class="inside_menu">
-<ul class="inside_menu">
-	<li><a href="/static_pages/home">to Home</a></li>
-	<li><a href="/static_pages/about">to About</a></li>
-	<li><a href="/static_pages/help">to Help</a></li>
-	<li><a href="/static_pages/contact">to Contact</a></li>
-	<li><a href="/albums">to Album</a></li>
-	<li><a href="/tracks">to Track</a></li>
-</ul>
+
+<div class="fotter"><!--подвал-->
+	<ul>
+		<li>2015</li>
+		<li>Galenko Evgeniy</li>
+		<li>Music App</li>
+	</ul>
 </div>
 
 </body>
