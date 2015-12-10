@@ -1,0 +1,150 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+.tables_style table td {
+  /*border: 1px solid;*/ }
+
+table {
+  min-width: 550px;
+  /* Ширина таблицы */
+  border-collapse: collapse;
+  /* Убираем двойные линии между ячейками */ }
+
+tr td#destroy:hover {
+  background: #FF969A;
+  text-align: center;
+  border-radius: 5px; }
+
+tr:hover {
+  background: #DAFDFF;
+  border-radius: 15px;
+  font-style: blue; }
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #000; }
+  a:visited {
+    color: #666; }
+  a:hover {
+    color: #fff;
+    background-color: #000; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  /*#060E56*/
+  background-image: url(fon.png); }
+
+#head {
+  /*положение шапки сайта*/
+  position: relative;
+  width: 100%;
+  float: top;
+  background: rgba(0, 0, 0, 0.6); }
+
+#head, ul, li {
+  position: relative;
+  display: inline-block;
+  text-align: right; }
+
+div#head ul li {
+  margin-right: 50px; }
+
+#head a {
+  color: white;
+  text-decoration: none;
+  /* Отменяем подчеркивание у ссылки */
+  font-size: large;
+  font-family: 'Courier New', 'Sans'; }
+
+#head a:hover {
+  color: #FDEC35;
+  text-shadow: 1px 0.5px 0px #dfdfdf;
+  /*тени для текста*/ }
+
+div.fotter {
+  position: relative;
+  margin-bottom: 0%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: white; }
+
+div.fotter ul li {
+  display: inline-block;
+  margin-left: 60px;
+  margin-right: 60px; }
+
+#jokes {
+  position: relative;
+  left: 2%;
+  top: 15%;
+  color: black;
+  width: 17%; }
+
+div.jokes > p {
+  font-style: italic; }
+
+#center {
+  text-align: center; }
+
+.content {
+  margin-left: 10px; }

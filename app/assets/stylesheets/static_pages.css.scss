@@ -6,7 +6,7 @@
 
     margin: 0;
     padding: 0;
-    background-color: white; /*#060E56*/
+    /*background-color: white; /*#060E56*/
     background-image: url(fon.png);
 
     }
@@ -44,8 +44,8 @@ div#head ul li{
 
 }
 div.fotter{
-  position: absolute;
-  bottom: 0%;
+  position: relative;
+  margin-bottom: 0%;
   width: 100%;
   background: rgba(0,0,0,0.8);
   color: white;
@@ -59,7 +59,7 @@ div.fotter ul li{
 }
 #jokes{
   position: relative;
-  left: 1%;
+  left: 2%;
   top: 15%;
   color: black;
   width: 17%;
@@ -70,4 +70,7 @@ div.jokes>p{
 }
 #center{
   text-align: center;
+}
+.content{
+  margin-left: 10px;
 }
