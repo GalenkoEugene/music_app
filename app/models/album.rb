@@ -6,4 +6,5 @@ class Album < ActiveRecord::Base
 			 length: { maximum: 30 }
 
 	has_many :tracks
+
 end

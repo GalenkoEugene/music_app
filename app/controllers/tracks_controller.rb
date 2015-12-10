@@ -5,6 +5,11 @@ class TracksController < ApplicationController
   # GET /tracks.json
   def index
     @tracks = Track.all
+    if params[:search]
+    @tracks = Track.search(params[:search]).order("created_at DESC")
+  else
+    @tracks = Track.all.order('created_at DESC')
+  end
   end
 
   # GET /tracks/1

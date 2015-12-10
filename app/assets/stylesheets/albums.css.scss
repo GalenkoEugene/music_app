@@ -1,3 +1,22 @@
 // Place all the styles related to the Albums controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.tables_style table td{
+	/*border: 1px solid;*/
+}
+ table {
+    min-width: 550px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+ tr td#destroy:hover{
+ 	background: #FF969A;
+ 	text-align: center;
+ 	border-radius: 5px;
+ }
+
+  tr:hover{
+ 	background: #DAFDFF;
+ 	
+ 	border-radius: 15px;
+ 	font-style: blue;
+ }
