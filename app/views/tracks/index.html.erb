@@ -1,13 +1,26 @@
 <% provide(:title, 'list of tracks') %>
 <h1>Listing tracks</h1>
 
-<table>
+<br>
+
+<div id="search">
+  <%= form_tag(Track, :method => "get") do %>
+      <div>
+        <%= text_field_tag :search, params[:search], placeholder: "Search by tracks" %>
+        <button type="submit">Search</button>
+      </div>
+  <% end %>
+  </div>
+
+ <br>
+
+<table id="list_of_tracks">
   <thead>
     <tr>
       <th>ID</th>
       <th>Record name</th>
       <th>Autor name</th>
-      <th>Album</th>
+      <th>Album name</th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,15 +29,17 @@
 
   <tbody>
     <% @tracks.each do |track| %>
+    <% albumnames = @albumnames.select{|k,v| k == track.id}.values %> <!-- select album name by "trak's id" and leaves only values -->
       <tr>
         <td><%= track.id %></td>
         <td><%= track.record_name %></td>
         <td><%= track.autor_name %></td>
-        <td><%= track.album_id %></td>
+        <td><%= albumnames %></td>
         <td><%= link_to 'Show', track %></td>
         <td><%= link_to 'Edit', edit_track_path(track) %></td>
-        <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td id="destroy"><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+   
     <% end %>
   </tbody>
 </table>
