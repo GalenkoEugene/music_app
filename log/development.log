@@ -44014,3 +44014,391 @@ Processing by TracksController#index as HTML
   [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
   Rendered tracks/index.html.erb within layouts/application (10.6ms)
 Completed 200 OK in 26ms (Views: 24.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-11 12:21:24 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/railties-4.0.2/lib/rails/templates/rails/welcome/index.html.erb (7.2ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-11 12:21:31 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (1.2ms)[0m  SELECT "albums".* FROM "albums"
+  Rendered albums/index.html.erb within layouts/application (74.5ms)
+Completed 200 OK in 3098ms (Views: 3027.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:34 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:35 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:35 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:35 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 12:21:35 +0200
+
+
+Started GET "/assets/fon.png" for 127.0.0.1 at 2015-12-11 12:21:35 +0200
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:25:51 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (106.8ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (182.0ms)
+Completed 200 OK in 377ms (Views: 206.3ms | ActiveRecord: 108.5ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-11 12:26:05 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.9ms)[0m  SELECT "albums".* FROM "albums"
+  Rendered albums/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/assets/fon.png" for 127.0.0.1 at 2015-12-11 12:26:06 +0200
+
+
+Started GET "/albums/2" for 127.0.0.1 at 2015-12-11 12:26:14 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mAlbum Load (1.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  [1m[35mTrack Load (1.1ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 2
+  Rendered albums/show.html.erb within layouts/application (32.7ms)
+Completed 200 OK in 121ms (Views: 81.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/albums/4" for 127.0.0.1 at 2015-12-11 12:26:18 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "4"]]
+  [1m[35mTrack Load (0.7ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 4
+  Rendered albums/show.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 54ms (Views: 44.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/albums/15" for 127.0.0.1 at 2015-12-11 12:26:21 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mAlbum Load (0.6ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "15"]]
+  [1m[35mTrack Load (1.9ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 15
+  Rendered albums/show.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 250ms (Views: 215.5ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:26:32 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (24.3ms)
+Completed 200 OK in 65ms (Views: 59.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:30:15 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.4ms)[0m  SELECT "tracks".* FROM "tracks" ORDER BY created_at DESC
+  Rendered tracks/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 74ms (Views: 70.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:16 +0200
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:30:17 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.1ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (25.3ms)
+Completed 200 OK in 69ms (Views: 65.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 12:30:18 +0200
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:30:19 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" ORDER BY created_at DESC
+  Rendered tracks/index.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 60ms (Views: 55.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:31:13 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (24.6ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (undefined method `album_name' for 2:Fixnum):
+    20:         <td><%= track.id %></td>
+    21:         <td><%= track.record_name %></td>
+    22:         <td><%= track.autor_name %></td>
+    23:         <td><%= track.album_id.album_name %></td>
+    24:         <td><%= link_to 'Show', track %></td>
+    25:         <td><%= link_to 'Edit', edit_track_path(track) %></td>
+    26:         <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/tracks/index.html.erb:23:in `block in _app_views_tracks_index_html_erb__717366081_76585640'
+  app/views/tracks/index.html.erb:18:in `_app_views_tracks_index_html_erb__717366081_76585640'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.5ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.3ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (65.2ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:31:25 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.2ms)[0m  SELECT "tracks".* FROM "tracks" ORDER BY created_at DESC
+  Rendered tracks/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `album_id' for nil:NilClass):
+    20:         <td><%= track.id %></td>
+    21:         <td><%= track.record_name %></td>
+    22:         <td><%= track.autor_name %></td>
+    23:         <td><%= @track.album_id.album_name %></td>
+    24:         <td><%= link_to 'Show', track %></td>
+    25:         <td><%= link_to 'Edit', edit_track_path(track) %></td>
+    26:         <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/tracks/index.html.erb:23:in `block in _app_views_tracks_index_html_erb__717366081_77966790'
+  app/views/tracks/index.html.erb:18:in `_app_views_tracks_index_html_erb__717366081_77966790'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.2ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (62.0ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:31:26 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.6ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `album_id' for nil:NilClass):
+    20:         <td><%= track.id %></td>
+    21:         <td><%= track.record_name %></td>
+    22:         <td><%= track.autor_name %></td>
+    23:         <td><%= @track.album_id.album_name %></td>
+    24:         <td><%= link_to 'Show', track %></td>
+    25:         <td><%= link_to 'Edit', edit_track_path(track) %></td>
+    26:         <td><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  app/views/tracks/index.html.erb:23:in `block in _app_views_tracks_index_html_erb__717366081_77966790'
+  app/views/tracks/index.html.erb:18:in `_app_views_tracks_index_html_erb__717366081_77966790'
+
+
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.6ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.1ms)
+  Rendered /home/evgeniy/.rvm/gems/ruby-2.0.0-p643@railstutorial_rails_4_0/gems/actionpack-4.0.2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (66.7ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+Processing by TracksController#index as HTML
+  [1m[35mTrack Load (1.1ms)[0m  SELECT "tracks".* FROM "tracks" ORDER BY created_at DESC
+  Rendered tracks/index.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 72ms (Views: 65.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:00 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:01 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 12:32:01 +0200
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-11 15:41:27 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.3ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  Rendered tracks/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 71ms (Views: 66.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-11 15:41:27 +0200
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-11 15:41:27 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-11 15:41:27 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-11 15:41:27 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-11 15:41:28 +0200
