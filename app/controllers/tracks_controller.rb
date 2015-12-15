@@ -5,20 +5,25 @@ class TracksController < ApplicationController
   # GET /tracks.json
   def index
     @tracks = Track.all
+   
     if params[:search]
-      @tracks = Track.search(params[:search]).order("created_at DESC")
-    else
-      @tracks = Track.all.order('created_at DESC')
+        @tracks = Track.search(params[:search]).order("created_at DESC")
+      else
+        @tracks = Track.all.order('created_at DESC')
     end
 
-    @albumnames = Hash.new                # create new hash for collect list of Album_names and track_id
-    @tracks.each do |track|
-      unless track.album_id               # if Album_names is empty we put "single"
-        @albumnames[track.id] = "single"
-      else
-        @albumnames[track.id] = Album.find(track.album_id).album_name
-      end
-    end  
+
+  #  @albumnames = Hash.new                # create new hash for collect list of Album_names and track_id 
+  #  @tracks.each do |track|
+  #    unless track.album_id               # if Album_names is empty we put "single"
+  #      @albumnames[track.id] = "single"
+  #    else
+  #      @albumnames[track.id] = Album.find(track.album_id).album_name
+  #    end
+  #  end  
+  # albumnames = @albumnames.select{|k,v| k == track.id}.values   #select album name by "trak's id" and leaves only values
+  #
+
   end
 
   # GET /tracks/1

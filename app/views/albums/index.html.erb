@@ -1,5 +1,17 @@
 <% provide(:title, 'list of albums') %>
 <h1>Listing albums</h1>
+<br>
+
+<div id="search">
+  <%= form_tag(Album, :method => "get") do %>
+      <div>
+        <%= text_field_tag :search, params[:search], placeholder: "Search by albums" %>
+        <button type="submit">Search by album</button>
+      </div>
+  <% end %>
+  </div>
+
+ <br>
 
 <table>
   <thead>

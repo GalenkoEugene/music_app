@@ -6,5 +6,7 @@ class Album < ActiveRecord::Base
 			 length: { maximum: 30 }
 
 	has_many :tracks
-
+def self.search(query)
+  where("albums.album_name like ?", "%#{query}%") #search method by 
+end
 end
