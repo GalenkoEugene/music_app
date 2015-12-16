@@ -59210,3 +59210,131 @@ Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-14 00:24:13
 
 Started GET "/assets/fon.png" for 127.0.0.1 at 2015-12-14 00:24:14 +0200
 >>>>>>> 6155d3d613d1fb91206686e8b2ec172ddf006713
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-16 11:16:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (15.9ms)[0m  SELECT "albums".* FROM "albums" ORDER BY created_at DESC
+  Rendered albums/index.html.erb within layouts/application (84.5ms)
+Completed 200 OK in 796ms (Views: 743.5ms | ActiveRecord: 17.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/assets/fon.png" for 127.0.0.1 at 2015-12-16 11:16:42 +0200
+
+
+Started GET "/albums/21" for 127.0.0.1 at 2015-12-16 11:16:45 +0200
+Processing by AlbumsController#show as HTML
+  Parameters: {"id"=>"21"}
+  [1m[36mAlbum Load (1.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1[0m  [["id", "21"]]
+  [1m[35mTrack Load (1.0ms)[0m  SELECT "tracks".* FROM "tracks" WHERE "tracks"."album_id" = 21
+  Rendered albums/show.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 275ms (Views: 216.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-16 11:16:50 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (1.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  [1m[35mAlbum Load (0.8ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  Rendered tracks/index.html.erb within layouts/application (97.1ms)
+Completed 200 OK in 140ms (Views: 130.5ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/tracks/24" for 127.0.0.1 at 2015-12-16 11:16:54 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mTrack Load (1.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "24"]]
+  [1m[35mAlbum Load (41.6ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered tracks/show.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 107ms (Views: 50.7ms | ActiveRecord: 42.8ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-16 11:16:56 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (2.5ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mAlbum Load (0.8ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mAlbum Load (0.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.2ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.2ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  Rendered tracks/index.html.erb within layouts/application (90.9ms)
+Completed 200 OK in 128ms (Views: 119.3ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/tracks/12" for 127.0.0.1 at 2015-12-16 11:17:00 +0200
+Processing by TracksController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mTrack Load (1.2ms)[0m  [1mSELECT "tracks".* FROM "tracks" WHERE "tracks"."id" = ? LIMIT 1[0m  [["id", "12"]]
+  [1m[35mAlbum Load (0.9ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered tracks/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 62ms (Views: 50.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-16 11:17:03 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (2.9ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  [1m[35mAlbum Load (9.4ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mAlbum Load (0.7ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mAlbum Load (9.7ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  Rendered tracks/index.html.erb within layouts/application (97.0ms)
+Completed 200 OK in 242ms (Views: 214.5ms | ActiveRecord: 23.6ms)

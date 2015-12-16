@@ -29,6 +29,11 @@ class TracksController < ApplicationController
   # GET /tracks/1
   # GET /tracks/1.json
   def show
+      unless @track.album_id  
+      @album_name = "\"Don't assigned or doesn't belong to any album \""
+    else
+      @album_name = Album.find(@track.album_id).album_name
+    end
   end
 
   # GET /tracks/new
