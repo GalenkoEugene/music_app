@@ -27,9 +27,9 @@ describe "Static pages" do
   end
   describe "About page" do
 
-    it "should have the content 'About Us'" do
+    it "should have the content 'About this task'" do
       visit '/static_pages/about'
-      expect(page).to have_content('About Us')
+      expect(page).to have_content('About this task')
     end
   end
    it "should have the title 'About Us'" do

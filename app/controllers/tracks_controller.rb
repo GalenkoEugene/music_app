@@ -13,7 +13,7 @@ class TracksController < ApplicationController
     end
 
 
-  #  @albumnames = Hash.new                # create new hash for collect list of Album_names and track_id 
+  #  @albumnames = Hash.new("single")                # create new hash for collect list of Album_names and track_id #вместо nill будет возващяться single
   #  @tracks.each do |track|
   #    unless track.album_id               # if Album_names is empty we put "single"
   #      @albumnames[track.id] = "single"
