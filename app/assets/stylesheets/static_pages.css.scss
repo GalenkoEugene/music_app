@@ -2,61 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-   html, body {
-
-    margin: 0;
-    padding: 0;
-    /*background-color: white; /*#060E56*/
+html, body {
     background-image: url(fon.png);
-
     }
 
-#head { /*положение шапки сайта*/
-
-  position: relative;
-  width: 100%;
-  float: top;
-  background: rgba(0,0,0,0.6);
-
-}
-#head, ul, li{
-  position: relative;
-  display: inline-block;
-  text-align: right;
-  
-}
-div#head ul li{
-  margin-right: 50px;
-}
-
-#head a{  
-  color: white;
-  text-decoration: none; /* Отменяем подчеркивание у ссылки */  
-  font-size: large;
-  font-family: 'Courier New', 'Sans';
-   
-}
-
-#head a:hover{
-  
-      color: #FDEC35;
-      text-shadow: 1px 0.5px 0px rgba(223,223,223,8); /*тени для текста*/
-
-}
-div.fotter{
-  position: relative;
-  margin-bottom: 0%;
-  width: 100%;
-  background: rgba(0,0,0,0.8);
-  color: white;
-
-  
-}
-div.fotter ul li{
-  display: inline-block;
-  margin-left: 60px;
-  margin-right: 60px;
-}
 #jokes{
   position: relative;
   left: 2%;
@@ -67,10 +16,4 @@ div.fotter ul li{
 }
 div.jokes>p{
   font-style: italic;
-}
-#center{
-  text-align: center;
-}
-.content{
-  margin-left: 10px;
 }

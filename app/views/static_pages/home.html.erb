@@ -1,16 +1,12 @@
 <% provide(:title, 'Home') %>
-<h1>Sample App</h1>
+<div class="center hero-unit">
+  <h1>Welcome to the Sample App</h1>
 
-
-<div id="jokes"> <!--юмор-->
-	<p>Окружающих надо периодически пугать, чтобы не сильно окружали.
-	<p id="center">***</p></p>
-	<p>Ярчайший пример импортозамещения. Вместо "все включено" в Турции и Египте "все выключено" в Крыму.<p id="center">***</p></p> 
-	<p>В еврейской сказке Ребе Гуд отбирал деньги у богатых и раздавал их бедным, под небольшой процент.</p><p id="center">***</p>
-	<p>Чем громче девушка смеётся над шутками мужчины, тем дольше у неё не было секса.</p><p id="center">***</p>
-	<p>- Яша! У меня для тебя шикарная новость!
-	<br>- Софочка, и шо за новость? 
-	<br>- Ты таки не зря платил страховку за машину!</p>
-</div>
-<br>
-<a href="http://vk.com/neon_ua" target="_blank">for comunicating with me "vk.com"</a>
+  <h2>
+    This is the home page for
+    <a href="http://vk.com/neon_ua" target="_blank">comunicating with me "vk.com"</a>
+    sample application.
+  </h2>
+  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+  </div>
+<%= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/' %>

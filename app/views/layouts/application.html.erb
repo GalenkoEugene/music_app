@@ -2,34 +2,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title><%= full_title(yield(:title)) %></title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-  <%= csrf_meta_tags %>
+     <title><%= full_title(yield(:title)) %></title>
+    <%= stylesheet_link_tag "application", media: "all",
+                                           "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+    <%= csrf_meta_tags %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= render 'layouts/shim' %>
+    
 </head>
 <body>
-	<div id="head"><!--шапка сайта-->
-		<ul>
-			<li><a href="/static_pages/home"> Home</a></li>
-			<li><a href="/static_pages/about"> About</a></li>
-			<li><a href="/static_pages/help"> Help</a></li>
-			<li><a href="/static_pages/contact"> Contact</a></li>
-			<li><a href="/albums">to Album</a></li>
-			<li><a href="/tracks">to Track</a></li>
-		</ul>
-	</div>
-<div class="content">	
-<%= yield %>
-</div>
-<!--<div class="fotter">подвал
-	
-	<ul>
-		<li>2015</li>
-		<li>Galenko Evgeniy</li>
-		<li>Music App</li>
-	</ul>
-
-</div>-->
-
+  <%= render 'layouts/header' %>
+  	<div class="container">	
+  		<%= yield %>
+  <%= render 'layouts/footer' %>
+  	</div>
 </body>
 </html>
