@@ -6,7 +6,7 @@
 <div id="search">
   <%= form_tag(Track, :method => "get") do %>
       <div>
-        <%= text_field_tag :search, params[:search], placeholder: "Search by tracks" %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search by tracks" %> <!-- search_field(:user, :name) -->
         <button type="submit">Search by track</button>
       </div>
   <% end %>
