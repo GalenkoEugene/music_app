@@ -77932,3 +77932,149 @@ Migrating to AddPasswordDigestToUsers (20151224223223)
   [1m[35mSQL (0.4ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20151224223223"]]
   [1m[36m (124.0ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/signup" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  Rendered users/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_shim.html.erb (0.7ms)
+  Rendered layouts/_header.html.erb (1.4ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 155ms (Views: 153.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/albums.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/custom.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/static_pages.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/tracks.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/albums.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/tracks.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/static_pages.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-12-25 00:46:43 +0200
+
+
+Started GET "/assets/fon.png" for 127.0.0.1 at 2015-12-25 00:46:44 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-25 00:46:45 +0200
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+  Rendered layouts/_shim.html.erb (0.6ms)
+  Rendered layouts/_header.html.erb (1.3ms)
+  Rendered layouts/_footer.html.erb (1.1ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2015-12-25 00:46:45 +0200
+
+
+Started GET "/help" for 127.0.0.1 at 2015-12-25 00:46:46 +0200
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.8ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/albums" for 127.0.0.1 at 2015-12-25 00:46:46 +0200
+Processing by AlbumsController#index as HTML
+  [1m[35mAlbum Load (0.4ms)[0m  SELECT "albums".* FROM "albums" ORDER BY created_at DESC
+  Rendered albums/index.html.erb within layouts/application (60.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 131ms (Views: 121.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/tracks" for 127.0.0.1 at 2015-12-25 00:46:47 +0200
+Processing by TracksController#index as HTML
+  [1m[36mTrack Load (0.4ms)[0m  [1mSELECT "tracks".* FROM "tracks" ORDER BY created_at DESC[0m
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mAlbum Load (0.3ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 21 LIMIT 1[0m
+  [1m[35mAlbum Load (0.3ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 4 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "albums".* FROM "albums" WHERE "albums"."id" = 2 LIMIT 1
+  Rendered tracks/index.html.erb within layouts/application (42.2ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 59.2ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-25 00:46:48 +0200
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-12-25 00:46:50 +0200
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.4ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for 127.0.0.1 at 2015-12-25 00:46:50 +0200
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_shim.html.erb (0.1ms)
+  Rendered layouts/_header.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.3ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (16.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER('mhartl@example.com') LIMIT 1[0m
+Binary data inserted for `string` type on column `password_digest`
+  [1m[35mSQL (48.2ms)[0m  INSERT INTO "users" ("created_at", "email", "name", "password_digest", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Sat, 26 Dec 2015 08:08:51 UTC +00:00], ["email", "mhartl@example.com"], ["name", "Alexandr Priadko"], ["password_digest", "$2a$10$a3mYWeRDzvrtoDuX9FhlmugYCEECJgR44ORR35zQNzIuIVu.o/Jbq"], ["updated_at", Sat, 26 Dec 2015 08:08:51 UTC +00:00]]
+  [1m[36m (114.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'mhartl@example.com' LIMIT 1[0m
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users"
