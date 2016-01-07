@@ -24,4 +24,12 @@ class User < ActiveRecord::Base
     def create_remember_token
       self.remember_token = User.encrypt(User.new_remember_token)
     end
+    #admin
+    has_many :tracks, dependent: :destroy
+    has_many :albums, dependent: :destroy
+
+    def feed
+      # Это предварительное решение. См. полную реализацию в "Following users".
+      Track.where("user_id = ?", id)
+  end
 end

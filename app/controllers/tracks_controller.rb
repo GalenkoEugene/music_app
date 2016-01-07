@@ -1,6 +1,7 @@
-class TracksController < ApplicationController
+  class TracksController < ApplicationController
   before_action :set_track, only: [:show, :edit, :update, :destroy]
-
+  before_action :signed_in_user
+  
   # GET /tracks
   # GET /tracks.json
   def index
@@ -93,6 +94,6 @@ class TracksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def track_params
-      params.require(:track).permit(:record_name, :autor_name, :album_id)
+      params.require(:track).permit(:record_name, :autor_name, :album_id, :user_id)
     end
 end

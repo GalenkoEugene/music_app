@@ -24,6 +24,10 @@
     <%= f.select :album_id, Album.all.collect {|p| [ p.album_name, p.id ] } %> <!--не в курил до конца но работает-->
   </div>
 
+  <div class="field">
+    <%= f.hidden_field :user_id, value: current_user.id %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

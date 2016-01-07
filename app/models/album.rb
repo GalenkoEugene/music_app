@@ -9,4 +9,9 @@ class Album < ActiveRecord::Base
 def self.search(query)
   where("albums.album_name like ?", "%#{query}%") #search method by 
 end
+#admin
+validates :user_id, presence: true
+belongs_to :user
+default_scope -> { order('created_at DESC') }
+ 
 end

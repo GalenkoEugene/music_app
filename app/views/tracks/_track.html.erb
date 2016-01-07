@@ -1,0 +1,30 @@
+
+<table id="list_of_tracks">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Record name</th>
+      <th>Autor name</th>
+      <th>Album name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tracks.each do |track| %>
+
+      <tr>
+        <td><%= track.id %></td>
+        <td><%= track.record_name %></td>
+        <td><%= track.autor_name %></td>
+        <td><%= Album.find_by_id(track.album_id).album_name %></td> <!-- insted of HASH -->
+        <td><%= link_to 'Show', track %></td>
+        <td><%= link_to 'Edit', edit_track_path(track) %></td>
+        <td id="destroy"><%= link_to 'Destroy', track, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+   
+    <% end %>
+  </tbody>
+</table>

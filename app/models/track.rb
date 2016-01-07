@@ -6,4 +6,9 @@ class Track < ActiveRecord::Base
 def self.search(query)
   where("record_name || autor_name like ?", "%#{query}%") #search method by record names and autors mame
 end
+#admin
+validates :user_id, presence: true
+belongs_to :user
+default_scope -> { order('created_at DESC') }
+  
 end

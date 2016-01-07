@@ -3,11 +3,11 @@
     <div class="container">
       <%= link_to "Music app", root_path, id: "logo" %>
       <nav>
-		<ul class="nav pull-right">
-			<li><%= link_to "Home", root_path %></li>  
+    <ul class="nav pull-right">
+      <li><%= link_to "Home", root_path %></li>  
       <li><%= link_to "Help", help_path %></li>
-			<li><a href="/albums">to Album</a></li>
-			<li><a href="/tracks">to Track</a></li>
+      <li><a href="/albums">to Album</a></li>
+      <li><a href="/tracks">to Track</a></li>
       <% if signed_in? %>
             <li><%= link_to "Users", users_path %></li>
             <li id="fat-menu" class="dropdown">
@@ -26,8 +26,8 @@
           <% else %>
             <li><%= link_to "Sign in", signin_path %></li>
           <% end %>
-		</ul>
-	    </nav>
+    </ul>
+      </nav>
     </div>
   </div>
 </header>

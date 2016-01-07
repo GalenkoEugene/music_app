@@ -1,0 +1,8 @@
+<li id="track-<%= track.id %>">
+  <%= link_to gravatar_for(track.user, size: 50), track.user %>
+  <span class="user"><%= link_to track.user.name, track.user %></span>
+  <span class="content"><%= track.content %></span>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(track.created_at) %> ago.
+  </span>
+</li>
